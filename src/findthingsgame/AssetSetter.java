@@ -162,6 +162,7 @@ public class AssetSetter {
 
     public SuperObject[] setInHouseObject(int house_id) {
         SuperObject[] house_obj = new SuperObject[20];
+
         // Init House Door
         house_obj[0] = new obj_door(gamepanel);
         house_obj[0].in_house_obj_x = 49;
@@ -255,6 +256,10 @@ public class AssetSetter {
 
     public void loadHouseObject(int index) {
         SuperObject house = gamepanel.obj[index];
+        // Clear 
+        for (int i = 0; i < 20; i++) {
+            gamepanel.house_obj[i] = null;
+        }
 
         // Load From House Object
         int i = 0;
