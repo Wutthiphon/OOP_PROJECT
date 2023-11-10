@@ -67,16 +67,16 @@ public class KeyboardHandler implements KeyListener {
                 }
                 if (keyboard_press == KeyEvent.VK_ENTER) {
                     if (gamepanel.ui.cmdNum == 0) {
-                        gamepanel.tileManager.loadMap("/assets/maps/level1.map", 1);
                         startGame();
+                        gamepanel.tileManager.loadMap("/assets/maps/level1.map", 1);
                     }
                     if (gamepanel.ui.cmdNum == 1) {
-                        gamepanel.tileManager.loadMap("/assets/maps/level2.map", 2);
                         startGame();
+                        gamepanel.tileManager.loadMap("/assets/maps/level2.map", 2);
                     }
                     if (gamepanel.ui.cmdNum == 2) {
-                        gamepanel.tileManager.loadMap("/assets/maps/level3.map", 3);
                         startGame();
+                        gamepanel.tileManager.loadMap("/assets/maps/level3.map", 3);
                     }
                     if (gamepanel.ui.cmdNum == 3) {
                         gamepanel.ui.titleScreen = 0;
